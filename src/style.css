@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+/* Sistema de colores: Variables CSS */
+:root {
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --secondary-color: #1a1a1a;
+  --background-light: #ffffff;
+  --background-dark: #242424;
+  --text-color-light: rgba(255, 255, 255, 0.87);
+  --text-color-dark: #213547;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-hover);
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-light);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #747bff;
+    --primary-hover: #646cff;
+    --background-light: #242424;
+    --background-dark: #121212;
+    --text-color-light: rgba(255, 255, 255, 0.87);
+    --text-color-dark: #f0f0f0;
+  }
+
+  body {
+    color: var(--text-color-light);
+    background-color: var(--background-dark);
+  }
+
+  button {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+  }
+}
